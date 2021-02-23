@@ -8,10 +8,10 @@
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
-                    <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-3" role="alert" v-if="$page.flash.message">
+                    <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-3" role="alert" >
                       <div class="flex">
                         <div>
-                          <p class="text-sm">{{ $page.flash.message }}</p>
+                          <p class="text-sm"></p>
                         </div>
                       </div>
                     </div>
@@ -52,12 +52,10 @@
                                   <div class="mb-4">
                                       <label for="exampleFormControlInput1" class="block text-gray-700 text-sm font-bold mb-2">Title:</label>
                                       <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput1" placeholder="Enter Title" v-model="form.title">
-                                      <div v-if="$page.errors.title" class="text-red-500">{{ $page.errors.title[0] }}</div>
                                   </div>
                                   <div class="mb-4">
                                       <label for="exampleFormControlInput2" class="block text-gray-700 text-sm font-bold mb-2">Body:</label>
                                       <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput2" v-model="form.body" placeholder="Enter Body"></textarea>
-                                      <div v-if="$page.errors.body" class="text-red-500">{{ $page.errors.body[0] }}</div>
                                   </div>
                             </div>
                           </div>

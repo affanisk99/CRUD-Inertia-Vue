@@ -33,7 +33,7 @@ class AppServiceProvider extends ServiceProvider
         ]);
 
         Inertia::share('flash',function(){
-            return[
+            return [
                 'message'=>Session::get('message'),
             ];
         });
